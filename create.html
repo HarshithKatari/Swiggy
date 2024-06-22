@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="swiggy1.png">
+  <title>Swiggy Sign Up</title>
+
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Body Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Container Styles */
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Heading Styles */
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff5722;
+    }
+
+    /* Form Styles */
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Input Styles */
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    /* Button Styles */
+    button {
+      padding: 10px;
+      background-color: #ff5722;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d84315;
+    }
+
+    /* Link Styles */
+    a {
+      text-align: center;
+      color: #333;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media Query for Responsive Design */
+    @media (max-width: 480px) {
+      .container {
+        width: 90%;
+      }
+    }
+  </style>  
+</head>
+<body>
+  <div class="container">
+    <h2>Create a Swiggy Account</h2>
+    <form action="register.php" method="POST">
+      <input type="text" name="full_name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit" style="margin-bottom:10px;">Create Account</button>
+    </form>
+    <a href="signin.html" target="_blank">Already have an account? Sign In</a>
+  </div>
+</body>
+</html>
